@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz2</title>
+    <link rel="stylesheet" href="Estilos/estilos.css">
+</head>
+
+<body>
+    <!-- titulo -->
+    <h1>Global Solution SAS</h1>
+
+    <div id="FirstInput">
+        <input id="DescrTarea" type="text" placeholder="Descripcion de la tarea">
+        <button id="AgregarBtn" type="text">Agregar Tarea</button>
+    </div>
+
+    <div id="EstadoTareas">
+        <div id="containerToDo">
+            <p>To do</p>
+            <div id="TareasContainer"></div>
+        </div>
+
+        <div id="containerDoing">
+            <p>Doing</p>
+            <div id="TareasContainerDoing"></div>
+        </div>
+
+        <div id="containerDone">
+            <p>Done</p>
+            <div id="TareasContainerDone"></div>
+        </div>
+    </div>
+
+
+
+
+    <div id="ToDoContainer">
+    </div>
+    <div id="ToDoTareas">
+
+    </div>
+
+
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyBDpIATJBKWKtIQLsXSp_jyPIXodPr7ig8",
+        authDomain: "quiz2ecosistemas.firebaseapp.com",
+        databaseURL: "https://quiz2ecosistemas.firebaseio.com",
+        projectId: "quiz2ecosistemas",
+        storageBucket: "quiz2ecosistemas.appspot.com",
+        messagingSenderId: "371827078266",
+        appId: "1:371827078266:web:9ec55138d46233f23ab7c3",
+        measurementId: "G-3XNE9BNP9Q"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="Componentes/Tareas.js"></script>
+<script src="js/Logica.js"></script>
+
+</html>
